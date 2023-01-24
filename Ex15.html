@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+
+<script>
+    //Numero de dias trabalhados no mês
+    var dias = Number.parseFloat(prompt("Quantos dias você trabalha na semana?:"));
+
+    var mes = dias * 4 + 2;
+    var horasTrabalhadas = 8 * mes;
+    var salario = horasTrabalhadas * 25;
+
+    document.write("A quantidade de dias trabalhados em um mês é: " + mes);
+    document.write("<BR>");
+    document.write("O valor por horas trabalhadas é de: R$ " + horasTrabalhadas + ",00");
+    document.write("<BR>");
+    document.write("O salário total em um mês trabalhado é: R$ " + salario + ",00");
+</script>
