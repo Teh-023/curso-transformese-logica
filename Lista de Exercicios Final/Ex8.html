@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+    var idade = Number.parseInt(prompt("Digite sua idade: "));
+    var dia = Number.parseInt(prompt("Digite o dia do seu aniversário: "));
+    var mes = Number.parseInt(prompt("Digite o mês do seu aniversário: "));
+    var ano = Number.parseInt(prompt("Digite o ano do seu aniversário: "));
+
+   
+    document.write("O seu aniversário em dias é:" + dia * 365);
+    pulaLinha();
+
+
+    function pulaLinha(qtdLinhas) {
+        for(let i = 0; i < 1; i++){
+            document.write("<br>");
+            document.write("<hr>");
+
+        }
+        
+    }
+
+    function VerificaIdade(idadeDias, idadeMes, idadeAno) {
+        var idadeDias = VerificaIdade(dia);
+
+        if (idadeDias) {
+            idadeDias = idadeDias + (idadeDias * 365);
+            return idadeDia("Sua idade em dias é" + idadeDias);
+        }
+        else {
+            idadeDias = idadeDias + (idadeMes * 365);
+            return idadeDia("Sua idade em dias é" + idadeDias);
+
+        }
+
+    }
+
+    </script>

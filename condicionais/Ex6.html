@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+
+<script>
+    var anoAtual = Number(prompt("Digite o ano:"));
+    var anoNascimento = Number(prompt("Digite o ano de seu nascimento"));
+    var diferenca = anoAtual - anoNascimento
+
+
+    if (diferenca > 18) {
+        var falta = diferenca - 18
+        document.write("Você já se alistou? Passaram " + falta + " anos ");
+    }
+
+
+    else if (diferenca = 18) {
+        document.write("Esse é o ano de você se alistar! ")
+    }
+    else {
+        var falta = 18 - diferenca
+        document.write("Faltam " + falta + " anos ");
+    }
+</script>

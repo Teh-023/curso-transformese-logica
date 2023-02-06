@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+
+<script>
+
+
+    fazerArroz(true)
+
+    function fazerArroz(arrozCru) {
+        document.write("Pegar o arroz.");
+        pulaLinha()
+        document.write("Lavar o arroz.");
+        pulaLinha()
+        document.write("Cortar cebola.");
+        pulaLinha()
+        document.write("Pegar a panela e ligar o fogo.");
+        pulaLinha()
+        document.write("Colocar óleo, cebola e deixar fritar.");
+        pulaLinha()
+        document.write("Colocar o arroz e a água.");
+        pulaLinha()
+        document.write("Deixar a água secar e verificar se o arroz está cozido.");
+        pulaLinha()
+        document.write("Desligar o fogo e tampar a panela.");
+        pulaLinha()
+
+        if (arrozCru) {
+            document.write("Acrescentar mais água.");
+            pulaLinha()
+        }
+        document.write("Colocar" + qtdeArroz + " xícaras de arroz");
+        pulaLinha()
+        desenharUmaLinha();
+    }
+
+
+
+
+
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+    function desenharUmaLinha() {
+        document.write("<hr>");
+    }
+
+</script>

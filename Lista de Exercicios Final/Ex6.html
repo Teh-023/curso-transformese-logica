@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var maior = 0;
+    var menor = 0;
+    var altura;
+
+
+
+    for (let i = 0; i < 15; i++) {
+        var altura = Number.parseFloat(prompt("Digite sua altura:"));
+
+        if (altura > maior) {
+            maior = altura;
+        }
+
+        if (menor == 0 || altura < menor) {
+            menor = altura;
+        }
+    }
+
+
+    document.write("A maior altura é:" + altura + maior + " m ");
+    document.write("<br>");
+    document.write("A menor altura é:" + altura + menor + " m ");
+</script>

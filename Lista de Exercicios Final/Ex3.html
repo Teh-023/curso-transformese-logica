@@ -1,0 +1,11 @@
+<meta charset="UTF-8">
+
+<script>
+    var reais = Number.parseFloat(prompt("Digite quantos dólares você possui guardado: "));
+    var cotacaoDolar = Number.parseFloat(prompt("Digite o valor do dólar hoje: "));
+
+    var reais = reais * cotacaoDolar;
+
+    document.write("Você possui: " + reais.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }));
+
+</script>

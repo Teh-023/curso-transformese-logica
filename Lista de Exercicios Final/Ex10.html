@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var array = [];
+    var par = [];
+    var impar = [];
+    var qtdPar = 0;
+    var qtdImpar = 0;
+
+    for(let i = 0; i < 10; i++){
+
+        array[i] = Number.parseInt(prompt("Digite um número inteiro: "));
+
+        if( (array[i] % 2) == 0) {
+
+            par.push(array[i]);
+
+            qtdPar++;
+        }
+      
+        else {
+
+            impar.push(array[i]);
+
+            qtdImpar++;
+        }
+
+    }
+
+    for(let i = 0; i < par.length; i++){
+
+        document.write(par[i] + ", ");
+    }
+
+    document.write("<br>");
+    document.write("Quantidade de pares: " + qtdPar);
+    document.write("<br>");
+    document.write("<br>");
+
+    for(let i = 0; i < impar.length; i++){
+        document.write(impar[i] + ", ");
+    }
+
+    document.write("<br>");
+    document.write("Quantidade de ímpares: " + qtdImpar);
+
+</script>

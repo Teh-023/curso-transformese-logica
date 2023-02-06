@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+
+<script>
+var anoNascimento = Number.parseInt(prompt("Digite o ano de seu nascimento:"));
+
+var idade = 2023 - anoNascimento;
+
+if (idade < 16) {
+document.write("Não eleitor.");
+}
+
+else if (idade == 18 && idade < 65) {
+document.write("Eleitor obrigatório.");
+}
+
+else {
+document.write("Eleitor facultativo");
+}
+
+</script>
